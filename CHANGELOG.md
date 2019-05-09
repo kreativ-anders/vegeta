@@ -1,3 +1,5 @@
+darken is generalised to 10%
+
 # Bulma Changelog
 
 ## 0.7.3
@@ -1019,7 +1021,7 @@ Variable name changes (mostly appending `-color`):
 ## 0.0.26
 
 * Added: `.modal-card`
-* Added: display responsive utilities
+* Added: display responsive utilites
 * Added: `.nav-center`
 * Added: `.tabs ul` left center right
 * Changed: `.navbar` renamed to `.level`
