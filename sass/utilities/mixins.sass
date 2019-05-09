@@ -169,8 +169,8 @@
 =delete
   @extend %unselectable
   -moz-appearance: none
-  -webkit-appearance: none
-  background-color: rgba($black, 0.2)
+  -webkit-appearance: none 
+  background-color: rgba(var(--color-black), 0.2)
   border: none
   border-radius: $radius-rounded
   cursor: pointer
@@ -190,7 +190,7 @@
   width: 20px
   &::before,
   &::after
-    background-color: $white
+    background-color: var(--color-white)
     content: ""
     display: block
     left: 50%
@@ -206,9 +206,9 @@
     width: 2px
   &:hover,
   &:focus
-    background-color: rgba($black, 0.3)
+    background-color: rgba(var(--color-black), 0.3)
   &:active
-    background-color: rgba($black, 0.4)
+    background-color: rgba(var(--color-black), 0.4)
   // Sizes
   &.is-small
     height: 16px
@@ -237,7 +237,7 @@
 
 =loader
   animation: spinAround 500ms infinite linear
-  border: 2px solid $grey-lighter
+  border: 2px solid var(--color-grey-lighter)
   border-radius: $radius-rounded
   border-right-color: transparent
   border-top-color: transparent

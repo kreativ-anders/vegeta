@@ -1,23 +1,21 @@
-$body-background-color: $white !default
+$body-background-color: var(--color-white) !default
 $body-size: 16px !default
 $body-rendering: optimizeLegibility !default
 $body-family: $family-primary !default
-$body-color: $text !default
+$body-color: var(--color-text) !default
 $body-weight: $weight-normal !default
 $body-line-height: 1.5 !default
-$body-overflow-x: hidden !default
-$body-overflow-y: scroll !default
 
 $code-family: $family-code !default
 $code-padding: 0.25em 0.5em 0.25em !default
 $code-weight: normal !default
 $code-size: 0.875em !default
 
-$hr-background-color: $background !default
+$hr-background-color: var(--color-background) !default
 $hr-height: 2px !default
 $hr-margin: 1.5rem 0 !default
 
-$strong-color: $text-strong !default
+$strong-color: var(--color-text-strong) !default
 $strong-weight: $weight-bold !default
 
 html
@@ -26,8 +24,8 @@ html
   -moz-osx-font-smoothing: grayscale
   -webkit-font-smoothing: antialiased
   min-width: 300px
-  overflow-x: $body-overflow-x
-  overflow-y: $body-overflow-y
+  overflow-x: hidden
+  overflow-y: scroll
   text-rendering: $body-rendering
   text-size-adjust: 100%
 
@@ -62,17 +60,17 @@ body
 // Inline
 
 a
-  color: $link
+  color: var(--color-link)
   cursor: pointer
   text-decoration: none
   strong
     color: currentColor
   &:hover
-    color: $link-hover
+    color: var(--color-link-hover)
 
 code
-  background-color: $code-background
-  color: $code
+  background-color: var(--color-code-background)
+  color: var(--color-code)
   font-size: $code-size
   font-weight: $code-weight
   padding: $code-padding
@@ -110,8 +108,8 @@ fieldset
 
 pre
   +overflow-touch
-  background-color: $pre-background
-  color: $pre
+  background-color: var(--color-pre-background)
+  color: var(--color-pre)
   font-size: 0.875em
   overflow-x: auto
   padding: 1.25rem 1.5rem
@@ -129,4 +127,4 @@ table
     text-align: left
     vertical-align: top
   th
-    color: $text-strong
+    color: var(--color-text-strong)

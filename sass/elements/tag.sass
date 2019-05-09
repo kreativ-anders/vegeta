@@ -1,5 +1,5 @@
-$tag-background-color: $background !default
-$tag-color: $text !default
+$tag-background-color: rgb(var(--color-background)) !default
+$tag-color: rgb(var(--color-text)) !default
 $tag-radius: $radius !default
 $tag-delete-margin: 1px !default
 
@@ -119,9 +119,9 @@ $tag-delete-margin: 1px !default
       width: 1px
     &:hover,
     &:focus
-      background-color: darken($tag-background-color, 5%)
+      background-color: rgb(var(--color-background-darken))
     &:active
-      background-color: darken($tag-background-color, 10%)
+      background-color: rgb(var(--color-background-darken))
   &.is-rounded
     border-radius: $radius-rounded
 

@@ -37,7 +37,7 @@
       .navbar-link
         &:hover,
         &.is-active
-          background-color: darken($color, 5%)
+          background-color: rgb(var(--color-#{$name}-darken))
           color: $color-invert
       .tabs
         a
@@ -53,7 +53,7 @@
           a
             color: $color-invert
             &:hover
-              background-color: rgba($black, 0.1)
+              background-color: rgba(rgb(var(--color-black)), 0.1)
           li.is-active a
             &,
             &:hover
@@ -62,8 +62,10 @@
               color: $color
       // Modifiers
       &.is-bold
-        $gradient-top-left: darken(saturate(adjust-hue($color, -10deg), 10%), 10%)
-        $gradient-bottom-right: lighten(saturate(adjust-hue($color, 10deg), 5%), 5%)
+        //$gradient-top-left: darken(saturate(adjust-hue($color, -10deg), 10%), 10%)
+        $gradient-top-left: rgb(var(--color-#{$name}-darken))
+        //$gradient-bottom-right: lighten(saturate(adjust-hue($color, 10deg), 5%), 5%)
+        $gradient-bottom-right: rgb(var(--color-#{$name}-lighten))
         background-image: linear-gradient(141deg, $gradient-top-left 0%, $color 71%, $gradient-bottom-right 100%)
         +mobile
           .navbar-menu
@@ -74,7 +76,7 @@
       //     span
       //       background-color: $color-invert
       //     &:hover
-      //       background-color: rgba($black, 0.1)
+      //       background-color: rgba(rgb(var(--color-black)), 0.1)
       //     &.is-active
       //       span
       //         background-color: $color-invert

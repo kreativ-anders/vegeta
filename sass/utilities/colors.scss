@@ -1,0 +1,129 @@
+// scss colers variable map
+$colers: (
+  // default
+  black:        "10, 10, 10",
+  black-bis:    "17, 17, 17",
+  black-ter:    "35, 35, 35",
+
+  grey-darker:  "53, 53, 53",
+  grey-dark:    "73, 73, 73",
+  grey:         "122, 122, 122",
+  grey-light:   "181, 181, 181",
+  grey-lighter: "219, 219, 219",
+
+  white-ter:    "244, 244, 244",
+  white-bis:    "249, 249, 249", 
+  white:        "255, 255, 255",
+
+  orange:       "255, 71, 15",
+  yellow:       "254, 221, 86",
+  green:        "35, 209, 96",
+  turquoise:    "0, 209, 177",
+  cyan:         "32, 155, 238",
+  blue:         "50, 115, 220",
+  purple:       "183, 107, 255",
+  red:          "254, 56, 95",
+
+  // derived
+  primary:      "0, 209, 177",  // turquoise
+
+  info:         "32, 155, 238",  // cyan
+  success:      "35, 209, 96",  // green
+  warning:      "254, 221, 86",  // yellow
+  danger:       "254, 56, 95",  // red
+
+  light:        "244, 244, 244",  // white-ter
+  dark:         "53, 53, 53",  // grey-darker
+
+  // darken by 10% colors
+  white-darken:          "229, 229, 229",
+  black-darken:          "9, 9, 9",
+
+  light-darken:          "219, 219, 219",
+  dark-darken:           "47, 47, 47",
+
+  light-invert-darken:   "9, 9, 9",
+  dark-invert-darken:    "180, 180, 180",
+
+  primary-darken:        "0, 188, 159",
+  primary-invert-darken: "253, 15, 51",
+
+  link-darken:           "35, 101, 207",
+  link-invert-darken:    "183, 125, 30",
+
+  info-darken:           "17, 141, 225", 
+  info-invert-darken:    "199, 89, 14",
+
+  success-darken:        "31, 188, 86",
+  success-invert-darken: "202, 34, 143",
+
+  warning-darken:        "253, 214, 52",
+  warning-invert-darken: "0, 32, 151",
+
+  danger-darken:         "253, 25, 70",
+  danger-invert-darken:  "0, 178, 143",
+
+  // invert colors
+  orange-invert:       "122, 224, 255",
+  yellow-invert:       "0, 36, 168",
+  green-invert:        "219, 45, 158",
+  turquoise-invert:    "254, 45, 77",
+  cyan-invert:         "222, 99, 16",
+  blue-invert:         "204, 139, 34",
+  purple-invert:       "71, 147, 0",
+  red-invert:          "0, 198, 159",
+
+  primary-invert:      "254, 45, 77",
+
+  info-invert:         "222, 99, 16",
+  success-invert:      "219, 45, 158", 
+  warning-invert:      "0, 36, 168",
+  danger-invert:       "0, 198, 159",
+
+  light-invert:        "10, 10, 10",
+  dark-invert:         "201, 201, 201",
+
+  // general colors
+  background:          "244, 244, 244",
+  background-darken:   "219, 219, 219",
+
+  border:       "219, 219, 219",
+  border-darken:"197, 197, 197",
+  border-hover: "181, 181, 181",
+
+  // text colors
+  text:         "73, 73, 73",
+  text-invert:  "181, 181, 181",
+  text-light:   "122, 122, 122",
+  text-strong:  "53, 53, 53",
+  text-strong-darken:  "47, 47, 47",
+
+  // code colors
+  code:             "254, 56, 95",
+  code-background:  "244, 244, 244",
+
+  pre:              "73, 73, 73",
+  pre-background:   "244, 244, 244",
+
+  // link colors
+  link:           "50, 115, 220",
+  link-invert:    "204, 139, 34",
+  link-visited:   "183, 107, 255",
+
+  link-hover:        "53, 53, 53",
+  link-hover-border: "181, 181, 181",
+
+  link-focus:       "53, 53, 53",
+  link-focus-border:"50, 115, 220",
+
+  link-active:        "53, 53, 53",
+  link-active-border: "73, 73, 73"
+);
+
+// ripped CSS4 vars out of color map
+:root {
+  // each item in color map
+  @each $name, $color in $colers {
+    --color-#{$name}: #{$color};
+  }
+}
