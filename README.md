@@ -47,4 +47,4 @@ Internet Explorer is not even partially supported.
 
 ## Warning
 
-There was no proper testing yet!
+**There was no proper testing yet!**
