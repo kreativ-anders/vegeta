@@ -8,6 +8,8 @@
 
 ### Bug fixes
 
+* fix missing rgb() declarations
+
 ### Deprecation
 
 * Sass darken method is generalised to 10%

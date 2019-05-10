@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! vegeta v0.7.4 | MIT License | github.com/kreativ-anders/vegeta */
+/*! vegeta v1.0.0 | MIT License | github.com/kreativ-anders/vegeta */
 :root {
   --color-black: 10, 10, 10;
   --color-black-bis: 17, 17, 17;
@@ -136,7 +136,7 @@
 .delete, .modal-close {
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-color: rgba(var(--color-black), 0.2);
+  background-color: rgba(rgb(var(--color-black)), 0.2);
   border: none;
   border-radius: 290486px;
   cursor: pointer;
@@ -158,7 +158,7 @@
   vertical-align: top;
   width: 20px; }
   .delete::before, .modal-close::before, .delete::after, .modal-close::after {
-    background-color: var(--color-white);
+    background-color: rgb(var(--color-white));
     content: "";
     display: block;
     left: 50%;
@@ -177,9 +177,9 @@
     height: 50%;
     width: 2px; }
   .delete:hover, .modal-close:hover, .delete:focus, .modal-close:focus {
-    background-color: rgba(var(--color-black), 0.3); }
+    background-color: rgba(rgb(var(--color-black)), 0.3); }
   .delete:active, .modal-close:active {
-    background-color: rgba(var(--color-black), 0.4); }
+    background-color: rgba(rgb(var(--color-black)), 0.4); }
   .is-small.delete, .is-small.modal-close {
     height: 16px;
     max-height: 16px;
@@ -205,7 +205,7 @@
 .button.is-loading::after, .select.is-loading::after, .control.is-loading::after, .loader {
   -webkit-animation: spinAround 500ms infinite linear;
   animation: spinAround 500ms infinite linear;
-  border: 2px solid var(--color-grey-lighter);
+  border: 2px solid rgb(var(--color-grey-lighter));
   border-radius: 290486px;
   border-right-color: transparent;
   border-top-color: transparent;
@@ -373,7 +373,7 @@ th {
   text-align: left; }
 
 html {
-  background-color: var(--color-white);
+  background-color: rgb(var(--color-white));
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -409,29 +409,29 @@ pre {
   font-family: monospace; }
 
 body {
-  color: var(--color-text);
+  color: rgb(var(--color-text));
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5; }
 
 a {
-  color: var(--color-link);
+  color: rgb(var(--color-link));
   cursor: pointer;
   text-decoration: none; }
   a strong {
     color: currentColor; }
   a:hover {
-    color: var(--color-link-hover); }
+    color: rgb(var(--color-link-hover)); }
 
 code {
-  background-color: var(--color-code-background);
-  color: var(--color-code);
+  background-color: rgb(var(--color-code-background));
+  color: rgb(var(--color-code));
   font-size: 0.875em;
   font-weight: normal;
   padding: 0.25em 0.5em 0.25em; }
 
 hr {
-  background-color: var(--color-background);
+  background-color: rgb(var(--color-background));
   border: none;
   display: block;
   height: 2px;
@@ -453,7 +453,7 @@ span {
   font-weight: inherit; }
 
 strong {
-  color: var(--color-text-strong);
+  color: rgb(var(--color-text-strong));
   font-weight: 700; }
 
 fieldset {
@@ -461,8 +461,8 @@ fieldset {
 
 pre {
   -webkit-overflow-scrolling: touch;
-  background-color: var(--color-pre-background);
-  color: var(--color-pre);
+  background-color: rgb(var(--color-pre-background));
+  color: rgb(var(--color-pre));
   font-size: 0.875em;
   overflow-x: auto;
   padding: 1.25rem 1.5rem;
@@ -479,7 +479,7 @@ table th {
   text-align: left;
   vertical-align: top; }
 table th {
-  color: var(--color-text-strong); }
+  color: rgb(var(--color-text-strong)); }
 
 .is-clearfix::after {
   clear: both;
@@ -1221,18 +1221,18 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 .box {
   background-color: rgb(var(--color-white));
   border-radius: 6px;
-  -webkit-box-shadow: 0 2px 3px rgba(var(--color-black), 0.1), 0 0 0 1px rgba(var(--color-black), 0.1);
-  box-shadow: 0 2px 3px rgba(var(--color-black), 0.1), 0 0 0 1px rgba(var(--color-black), 0.1);
+  -webkit-box-shadow: 0 2px 3px rgba(rgb(var(--color-black)), 0.1), 0 0 0 1px rgba(rgb(var(--color-black)), 0.1);
+  box-shadow: 0 2px 3px rgba(rgb(var(--color-black)), 0.1), 0 0 0 1px rgba(rgb(var(--color-black)), 0.1);
   color: rgb(var(--color-text));
   display: block;
   padding: 1.25rem; }
 
 a.box:hover, a.box:focus {
-  -webkit-box-shadow: 0 2px 3px rgba(var(--color-black), 0.1), 0 0 0 1px rgb(var(--color-link));
-  box-shadow: 0 2px 3px rgba(var(--color-black), 0.1), 0 0 0 1px rgb(var(--color-link)); }
+  -webkit-box-shadow: 0 2px 3px rgba(rgb(var(--color-black)), 0.1), 0 0 0 1px rgb(var(--color-link));
+  box-shadow: 0 2px 3px rgba(rgb(var(--color-black)), 0.1), 0 0 0 1px rgb(var(--color-link)); }
 a.box:active {
-  -webkit-box-shadow: inset 0 1px 2px rgba(var(--color-black), 0.2), 0 0 0 1px rgb(var(--color-link));
-  box-shadow: inset 0 1px 2px rgba(var(--color-black), 0.2), 0 0 0 1px rgb(var(--color-link)); }
+  -webkit-box-shadow: inset 0 1px 2px rgba(rgb(var(--color-black)), 0.2), 0 0 0 1px rgb(var(--color-link));
+  box-shadow: inset 0 1px 2px rgba(rgb(var(--color-black)), 0.2), 0 0 0 1px rgb(var(--color-link)); }
 
 .button {
   background-color: rgb(var(--color-white));
@@ -1284,7 +1284,7 @@ a.box:active {
       background-color: rgb(var(--color-text-strong));
       color: rgb(var(--color-text-strong)); }
     .button.is-text:active, .button.is-text.is-active {
-      background-color: var(--color-text-strong-darken);
+      background-color: rgb(var(--color-text-strong-darken));
       color: rgb(var(--color-text-strong)); }
     .button.is-text[disabled], fieldset[disabled] .button.is-text {
       background-color: transparent;
@@ -1296,7 +1296,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-black); }
     .button.is-white:hover, .button.is-white.is-hovered {
-      background-color: var(--color-white-darken);
+      background-color: rgb(var(--color-white-darken));
       border-color: transparent;
       color: var(--color-black); }
     .button.is-white:focus, .button.is-white.is-focused {
@@ -1306,7 +1306,7 @@ a.box:active {
         -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-white), 0.25);
         box-shadow: 0 0 0 0.125em rgba(var(--color-white), 0.25); }
     .button.is-white:active, .button.is-white.is-active {
-      background-color: var(--color-white-darken);
+      background-color: rgb(var(--color-white-darken));
       border-color: transparent;
       color: var(--color-black); }
     .button.is-white[disabled], fieldset[disabled] .button.is-white {
@@ -1318,7 +1318,7 @@ a.box:active {
       background-color: var(--color-black);
       color: var(--color-white); }
       .button.is-white.is-inverted:hover {
-        background-color: var(--color-white-invert-darken); }
+        background-color: rgb(var(--color-white-invert-darken)); }
       .button.is-white.is-inverted[disabled], fieldset[disabled] .button.is-white.is-inverted {
         background-color: var(--color-black);
         border-color: transparent;
@@ -1361,7 +1361,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-white); }
     .button.is-black:hover, .button.is-black.is-hovered {
-      background-color: var(--color-black-darken);
+      background-color: rgb(var(--color-black-darken));
       border-color: transparent;
       color: var(--color-white); }
     .button.is-black:focus, .button.is-black.is-focused {
@@ -1371,7 +1371,7 @@ a.box:active {
         -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-black), 0.25);
         box-shadow: 0 0 0 0.125em rgba(var(--color-black), 0.25); }
     .button.is-black:active, .button.is-black.is-active {
-      background-color: var(--color-black-darken);
+      background-color: rgb(var(--color-black-darken));
       border-color: transparent;
       color: var(--color-white); }
     .button.is-black[disabled], fieldset[disabled] .button.is-black {
@@ -1383,7 +1383,7 @@ a.box:active {
       background-color: var(--color-white);
       color: var(--color-black); }
       .button.is-black.is-inverted:hover {
-        background-color: var(--color-black-invert-darken); }
+        background-color: rgb(var(--color-black-invert-darken)); }
       .button.is-black.is-inverted[disabled], fieldset[disabled] .button.is-black.is-inverted {
         background-color: var(--color-white);
         border-color: transparent;
@@ -1426,7 +1426,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-light-invert); }
     .button.is-light:hover, .button.is-light.is-hovered {
-      background-color: var(--color-light-darken);
+      background-color: rgb(var(--color-light-darken));
       border-color: transparent;
       color: var(--color-light-invert); }
     .button.is-light:focus, .button.is-light.is-focused {
@@ -1436,7 +1436,7 @@ a.box:active {
         -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-light), 0.25);
         box-shadow: 0 0 0 0.125em rgba(var(--color-light), 0.25); }
     .button.is-light:active, .button.is-light.is-active {
-      background-color: var(--color-light-darken);
+      background-color: rgb(var(--color-light-darken));
       border-color: transparent;
       color: var(--color-light-invert); }
     .button.is-light[disabled], fieldset[disabled] .button.is-light {
@@ -1448,7 +1448,7 @@ a.box:active {
       background-color: var(--color-light-invert);
       color: var(--color-light); }
       .button.is-light.is-inverted:hover {
-        background-color: var(--color-light-invert-darken); }
+        background-color: rgb(var(--color-light-invert-darken)); }
       .button.is-light.is-inverted[disabled], fieldset[disabled] .button.is-light.is-inverted {
         background-color: var(--color-light-invert);
         border-color: transparent;
@@ -1491,7 +1491,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-dark-invert); }
     .button.is-dark:hover, .button.is-dark.is-hovered {
-      background-color: var(--color-dark-darken);
+      background-color: rgb(var(--color-dark-darken));
       border-color: transparent;
       color: var(--color-dark-invert); }
     .button.is-dark:focus, .button.is-dark.is-focused {
@@ -1501,7 +1501,7 @@ a.box:active {
         -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-dark), 0.25);
         box-shadow: 0 0 0 0.125em rgba(var(--color-dark), 0.25); }
     .button.is-dark:active, .button.is-dark.is-active {
-      background-color: var(--color-dark-darken);
+      background-color: rgb(var(--color-dark-darken));
       border-color: transparent;
       color: var(--color-dark-invert); }
     .button.is-dark[disabled], fieldset[disabled] .button.is-dark {
@@ -1513,7 +1513,7 @@ a.box:active {
       background-color: var(--color-dark-invert);
       color: var(--color-dark); }
       .button.is-dark.is-inverted:hover {
-        background-color: var(--color-dark-invert-darken); }
+        background-color: rgb(var(--color-dark-invert-darken)); }
       .button.is-dark.is-inverted[disabled], fieldset[disabled] .button.is-dark.is-inverted {
         background-color: var(--color-dark-invert);
         border-color: transparent;
@@ -1556,7 +1556,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-primary-invert); }
     .button.is-primary:hover, .button.is-primary.is-hovered {
-      background-color: var(--color-primary-darken);
+      background-color: rgb(var(--color-primary-darken));
       border-color: transparent;
       color: var(--color-primary-invert); }
     .button.is-primary:focus, .button.is-primary.is-focused {
@@ -1566,7 +1566,7 @@ a.box:active {
         -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-primary), 0.25);
         box-shadow: 0 0 0 0.125em rgba(var(--color-primary), 0.25); }
     .button.is-primary:active, .button.is-primary.is-active {
-      background-color: var(--color-primary-darken);
+      background-color: rgb(var(--color-primary-darken));
       border-color: transparent;
       color: var(--color-primary-invert); }
     .button.is-primary[disabled], fieldset[disabled] .button.is-primary {
@@ -1578,7 +1578,7 @@ a.box:active {
       background-color: var(--color-primary-invert);
       color: var(--color-primary); }
       .button.is-primary.is-inverted:hover {
-        background-color: var(--color-primary-invert-darken); }
+        background-color: rgb(var(--color-primary-invert-darken)); }
       .button.is-primary.is-inverted[disabled], fieldset[disabled] .button.is-primary.is-inverted {
         background-color: var(--color-primary-invert);
         border-color: transparent;
@@ -1621,7 +1621,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-link-invert); }
     .button.is-link:hover, .button.is-link.is-hovered {
-      background-color: var(--color-link-darken);
+      background-color: rgb(var(--color-link-darken));
       border-color: transparent;
       color: var(--color-link-invert); }
     .button.is-link:focus, .button.is-link.is-focused {
@@ -1631,7 +1631,7 @@ a.box:active {
         -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-link), 0.25);
         box-shadow: 0 0 0 0.125em rgba(var(--color-link), 0.25); }
     .button.is-link:active, .button.is-link.is-active {
-      background-color: var(--color-link-darken);
+      background-color: rgb(var(--color-link-darken));
       border-color: transparent;
       color: var(--color-link-invert); }
     .button.is-link[disabled], fieldset[disabled] .button.is-link {
@@ -1643,7 +1643,7 @@ a.box:active {
       background-color: var(--color-link-invert);
       color: var(--color-link); }
       .button.is-link.is-inverted:hover {
-        background-color: var(--color-link-invert-darken); }
+        background-color: rgb(var(--color-link-invert-darken)); }
       .button.is-link.is-inverted[disabled], fieldset[disabled] .button.is-link.is-inverted {
         background-color: var(--color-link-invert);
         border-color: transparent;
@@ -1686,7 +1686,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-info-invert); }
     .button.is-info:hover, .button.is-info.is-hovered {
-      background-color: var(--color-info-darken);
+      background-color: rgb(var(--color-info-darken));
       border-color: transparent;
       color: var(--color-info-invert); }
     .button.is-info:focus, .button.is-info.is-focused {
@@ -1696,7 +1696,7 @@ a.box:active {
         -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-info), 0.25);
         box-shadow: 0 0 0 0.125em rgba(var(--color-info), 0.25); }
     .button.is-info:active, .button.is-info.is-active {
-      background-color: var(--color-info-darken);
+      background-color: rgb(var(--color-info-darken));
       border-color: transparent;
       color: var(--color-info-invert); }
     .button.is-info[disabled], fieldset[disabled] .button.is-info {
@@ -1708,7 +1708,7 @@ a.box:active {
       background-color: var(--color-info-invert);
       color: var(--color-info); }
       .button.is-info.is-inverted:hover {
-        background-color: var(--color-info-invert-darken); }
+        background-color: rgb(var(--color-info-invert-darken)); }
       .button.is-info.is-inverted[disabled], fieldset[disabled] .button.is-info.is-inverted {
         background-color: var(--color-info-invert);
         border-color: transparent;
@@ -1751,7 +1751,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-success-invert); }
     .button.is-success:hover, .button.is-success.is-hovered {
-      background-color: var(--color-success-darken);
+      background-color: rgb(var(--color-success-darken));
       border-color: transparent;
       color: var(--color-success-invert); }
     .button.is-success:focus, .button.is-success.is-focused {
@@ -1761,7 +1761,7 @@ a.box:active {
         -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-success), 0.25);
         box-shadow: 0 0 0 0.125em rgba(var(--color-success), 0.25); }
     .button.is-success:active, .button.is-success.is-active {
-      background-color: var(--color-success-darken);
+      background-color: rgb(var(--color-success-darken));
       border-color: transparent;
       color: var(--color-success-invert); }
     .button.is-success[disabled], fieldset[disabled] .button.is-success {
@@ -1773,7 +1773,7 @@ a.box:active {
       background-color: var(--color-success-invert);
       color: var(--color-success); }
       .button.is-success.is-inverted:hover {
-        background-color: var(--color-success-invert-darken); }
+        background-color: rgb(var(--color-success-invert-darken)); }
       .button.is-success.is-inverted[disabled], fieldset[disabled] .button.is-success.is-inverted {
         background-color: var(--color-success-invert);
         border-color: transparent;
@@ -1816,7 +1816,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-warning-invert); }
     .button.is-warning:hover, .button.is-warning.is-hovered {
-      background-color: var(--color-warning-darken);
+      background-color: rgb(var(--color-warning-darken));
       border-color: transparent;
       color: var(--color-warning-invert); }
     .button.is-warning:focus, .button.is-warning.is-focused {
@@ -1826,7 +1826,7 @@ a.box:active {
         -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-warning), 0.25);
         box-shadow: 0 0 0 0.125em rgba(var(--color-warning), 0.25); }
     .button.is-warning:active, .button.is-warning.is-active {
-      background-color: var(--color-warning-darken);
+      background-color: rgb(var(--color-warning-darken));
       border-color: transparent;
       color: var(--color-warning-invert); }
     .button.is-warning[disabled], fieldset[disabled] .button.is-warning {
@@ -1838,7 +1838,7 @@ a.box:active {
       background-color: var(--color-warning-invert);
       color: var(--color-warning); }
       .button.is-warning.is-inverted:hover {
-        background-color: var(--color-warning-invert-darken); }
+        background-color: rgb(var(--color-warning-invert-darken)); }
       .button.is-warning.is-inverted[disabled], fieldset[disabled] .button.is-warning.is-inverted {
         background-color: var(--color-warning-invert);
         border-color: transparent;
@@ -1881,7 +1881,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-danger-invert); }
     .button.is-danger:hover, .button.is-danger.is-hovered {
-      background-color: var(--color-danger-darken);
+      background-color: rgb(var(--color-danger-darken));
       border-color: transparent;
       color: var(--color-danger-invert); }
     .button.is-danger:focus, .button.is-danger.is-focused {
@@ -1891,7 +1891,7 @@ a.box:active {
         -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-danger), 0.25);
         box-shadow: 0 0 0 0.125em rgba(var(--color-danger), 0.25); }
     .button.is-danger:active, .button.is-danger.is-active {
-      background-color: var(--color-danger-darken);
+      background-color: rgb(var(--color-danger-darken));
       border-color: transparent;
       color: var(--color-danger-invert); }
     .button.is-danger[disabled], fieldset[disabled] .button.is-danger {
@@ -1903,7 +1903,7 @@ a.box:active {
       background-color: var(--color-danger-invert);
       color: var(--color-danger); }
       .button.is-danger.is-inverted:hover {
-        background-color: var(--color-danger-invert-darken); }
+        background-color: rgb(var(--color-danger-invert-darken)); }
       .button.is-danger.is-inverted[disabled], fieldset[disabled] .button.is-danger.is-inverted {
         background-color: var(--color-danger-invert);
         border-color: transparent;
@@ -2425,7 +2425,7 @@ a.box:active {
   .select.is-white select {
     border-color: var(--color-white); }
     .select.is-white select:hover, .select.is-white select.is-hovered {
-      border-color: var(--color-white-darken); }
+      border-color: rgb(var(--color-white-darken)); }
     .select.is-white select:focus, .select.is-white select.is-focused, .select.is-white select:active, .select.is-white select.is-active {
       -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-white), 0.25);
       box-shadow: 0 0 0 0.125em rgba(var(--color-white), 0.25); }
@@ -2434,7 +2434,7 @@ a.box:active {
   .select.is-black select {
     border-color: var(--color-black); }
     .select.is-black select:hover, .select.is-black select.is-hovered {
-      border-color: var(--color-black-darken); }
+      border-color: rgb(var(--color-black-darken)); }
     .select.is-black select:focus, .select.is-black select.is-focused, .select.is-black select:active, .select.is-black select.is-active {
       -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-black), 0.25);
       box-shadow: 0 0 0 0.125em rgba(var(--color-black), 0.25); }
@@ -2443,7 +2443,7 @@ a.box:active {
   .select.is-light select {
     border-color: var(--color-light); }
     .select.is-light select:hover, .select.is-light select.is-hovered {
-      border-color: var(--color-light-darken); }
+      border-color: rgb(var(--color-light-darken)); }
     .select.is-light select:focus, .select.is-light select.is-focused, .select.is-light select:active, .select.is-light select.is-active {
       -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-light), 0.25);
       box-shadow: 0 0 0 0.125em rgba(var(--color-light), 0.25); }
@@ -2452,7 +2452,7 @@ a.box:active {
   .select.is-dark select {
     border-color: var(--color-dark); }
     .select.is-dark select:hover, .select.is-dark select.is-hovered {
-      border-color: var(--color-dark-darken); }
+      border-color: rgb(var(--color-dark-darken)); }
     .select.is-dark select:focus, .select.is-dark select.is-focused, .select.is-dark select:active, .select.is-dark select.is-active {
       -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-dark), 0.25);
       box-shadow: 0 0 0 0.125em rgba(var(--color-dark), 0.25); }
@@ -2461,7 +2461,7 @@ a.box:active {
   .select.is-primary select {
     border-color: var(--color-primary); }
     .select.is-primary select:hover, .select.is-primary select.is-hovered {
-      border-color: var(--color-primary-darken); }
+      border-color: rgb(var(--color-primary-darken)); }
     .select.is-primary select:focus, .select.is-primary select.is-focused, .select.is-primary select:active, .select.is-primary select.is-active {
       -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-primary), 0.25);
       box-shadow: 0 0 0 0.125em rgba(var(--color-primary), 0.25); }
@@ -2470,7 +2470,7 @@ a.box:active {
   .select.is-link select {
     border-color: var(--color-link); }
     .select.is-link select:hover, .select.is-link select.is-hovered {
-      border-color: var(--color-link-darken); }
+      border-color: rgb(var(--color-link-darken)); }
     .select.is-link select:focus, .select.is-link select.is-focused, .select.is-link select:active, .select.is-link select.is-active {
       -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-link), 0.25);
       box-shadow: 0 0 0 0.125em rgba(var(--color-link), 0.25); }
@@ -2479,7 +2479,7 @@ a.box:active {
   .select.is-info select {
     border-color: var(--color-info); }
     .select.is-info select:hover, .select.is-info select.is-hovered {
-      border-color: var(--color-info-darken); }
+      border-color: rgb(var(--color-info-darken)); }
     .select.is-info select:focus, .select.is-info select.is-focused, .select.is-info select:active, .select.is-info select.is-active {
       -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-info), 0.25);
       box-shadow: 0 0 0 0.125em rgba(var(--color-info), 0.25); }
@@ -2488,7 +2488,7 @@ a.box:active {
   .select.is-success select {
     border-color: var(--color-success); }
     .select.is-success select:hover, .select.is-success select.is-hovered {
-      border-color: var(--color-success-darken); }
+      border-color: rgb(var(--color-success-darken)); }
     .select.is-success select:focus, .select.is-success select.is-focused, .select.is-success select:active, .select.is-success select.is-active {
       -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-success), 0.25);
       box-shadow: 0 0 0 0.125em rgba(var(--color-success), 0.25); }
@@ -2497,7 +2497,7 @@ a.box:active {
   .select.is-warning select {
     border-color: var(--color-warning); }
     .select.is-warning select:hover, .select.is-warning select.is-hovered {
-      border-color: var(--color-warning-darken); }
+      border-color: rgb(var(--color-warning-darken)); }
     .select.is-warning select:focus, .select.is-warning select.is-focused, .select.is-warning select:active, .select.is-warning select.is-active {
       -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-warning), 0.25);
       box-shadow: 0 0 0 0.125em rgba(var(--color-warning), 0.25); }
@@ -2506,7 +2506,7 @@ a.box:active {
   .select.is-danger select {
     border-color: var(--color-danger); }
     .select.is-danger select:hover, .select.is-danger select.is-hovered {
-      border-color: var(--color-danger-darken); }
+      border-color: rgb(var(--color-danger-darken)); }
     .select.is-danger select:focus, .select.is-danger select.is-focused, .select.is-danger select:active, .select.is-danger select.is-active {
       -webkit-box-shadow: 0 0 0 0.125em rgba(var(--color-danger), 0.25);
       box-shadow: 0 0 0 0.125em rgba(var(--color-danger), 0.25); }
@@ -2554,7 +2554,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-black); }
   .file.is-white:hover .file-cta, .file.is-white.is-hovered .file-cta {
-    background-color: var(--color-white-darken);
+    background-color: rgb(var(--color-white-darken));
     border-color: transparent;
     color: var(--color-black); }
   .file.is-white:focus .file-cta, .file.is-white.is-focused .file-cta {
@@ -2563,7 +2563,7 @@ a.box:active {
     box-shadow: 0 0 0.5em rgba(var(--color-white), 0.25);
     color: var(--color-black); }
   .file.is-white:active .file-cta, .file.is-white.is-active .file-cta {
-    background-color: var(--color-white-darken);
+    background-color: rgb(var(--color-white-darken));
     border-color: transparent;
     color: var(--color-black); }
   .file.is-black .file-cta {
@@ -2571,7 +2571,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-white); }
   .file.is-black:hover .file-cta, .file.is-black.is-hovered .file-cta {
-    background-color: var(--color-black-darken);
+    background-color: rgb(var(--color-black-darken));
     border-color: transparent;
     color: var(--color-white); }
   .file.is-black:focus .file-cta, .file.is-black.is-focused .file-cta {
@@ -2580,7 +2580,7 @@ a.box:active {
     box-shadow: 0 0 0.5em rgba(var(--color-black), 0.25);
     color: var(--color-white); }
   .file.is-black:active .file-cta, .file.is-black.is-active .file-cta {
-    background-color: var(--color-black-darken);
+    background-color: rgb(var(--color-black-darken));
     border-color: transparent;
     color: var(--color-white); }
   .file.is-light .file-cta {
@@ -2588,7 +2588,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-light-invert); }
   .file.is-light:hover .file-cta, .file.is-light.is-hovered .file-cta {
-    background-color: var(--color-light-darken);
+    background-color: rgb(var(--color-light-darken));
     border-color: transparent;
     color: var(--color-light-invert); }
   .file.is-light:focus .file-cta, .file.is-light.is-focused .file-cta {
@@ -2597,7 +2597,7 @@ a.box:active {
     box-shadow: 0 0 0.5em rgba(var(--color-light), 0.25);
     color: var(--color-light-invert); }
   .file.is-light:active .file-cta, .file.is-light.is-active .file-cta {
-    background-color: var(--color-light-darken);
+    background-color: rgb(var(--color-light-darken));
     border-color: transparent;
     color: var(--color-light-invert); }
   .file.is-dark .file-cta {
@@ -2605,7 +2605,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-dark-invert); }
   .file.is-dark:hover .file-cta, .file.is-dark.is-hovered .file-cta {
-    background-color: var(--color-dark-darken);
+    background-color: rgb(var(--color-dark-darken));
     border-color: transparent;
     color: var(--color-dark-invert); }
   .file.is-dark:focus .file-cta, .file.is-dark.is-focused .file-cta {
@@ -2614,7 +2614,7 @@ a.box:active {
     box-shadow: 0 0 0.5em rgba(var(--color-dark), 0.25);
     color: var(--color-dark-invert); }
   .file.is-dark:active .file-cta, .file.is-dark.is-active .file-cta {
-    background-color: var(--color-dark-darken);
+    background-color: rgb(var(--color-dark-darken));
     border-color: transparent;
     color: var(--color-dark-invert); }
   .file.is-primary .file-cta {
@@ -2622,7 +2622,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-primary-invert); }
   .file.is-primary:hover .file-cta, .file.is-primary.is-hovered .file-cta {
-    background-color: var(--color-primary-darken);
+    background-color: rgb(var(--color-primary-darken));
     border-color: transparent;
     color: var(--color-primary-invert); }
   .file.is-primary:focus .file-cta, .file.is-primary.is-focused .file-cta {
@@ -2631,7 +2631,7 @@ a.box:active {
     box-shadow: 0 0 0.5em rgba(var(--color-primary), 0.25);
     color: var(--color-primary-invert); }
   .file.is-primary:active .file-cta, .file.is-primary.is-active .file-cta {
-    background-color: var(--color-primary-darken);
+    background-color: rgb(var(--color-primary-darken));
     border-color: transparent;
     color: var(--color-primary-invert); }
   .file.is-link .file-cta {
@@ -2639,7 +2639,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-link-invert); }
   .file.is-link:hover .file-cta, .file.is-link.is-hovered .file-cta {
-    background-color: var(--color-link-darken);
+    background-color: rgb(var(--color-link-darken));
     border-color: transparent;
     color: var(--color-link-invert); }
   .file.is-link:focus .file-cta, .file.is-link.is-focused .file-cta {
@@ -2648,7 +2648,7 @@ a.box:active {
     box-shadow: 0 0 0.5em rgba(var(--color-link), 0.25);
     color: var(--color-link-invert); }
   .file.is-link:active .file-cta, .file.is-link.is-active .file-cta {
-    background-color: var(--color-link-darken);
+    background-color: rgb(var(--color-link-darken));
     border-color: transparent;
     color: var(--color-link-invert); }
   .file.is-info .file-cta {
@@ -2656,7 +2656,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-info-invert); }
   .file.is-info:hover .file-cta, .file.is-info.is-hovered .file-cta {
-    background-color: var(--color-info-darken);
+    background-color: rgb(var(--color-info-darken));
     border-color: transparent;
     color: var(--color-info-invert); }
   .file.is-info:focus .file-cta, .file.is-info.is-focused .file-cta {
@@ -2665,7 +2665,7 @@ a.box:active {
     box-shadow: 0 0 0.5em rgba(var(--color-info), 0.25);
     color: var(--color-info-invert); }
   .file.is-info:active .file-cta, .file.is-info.is-active .file-cta {
-    background-color: var(--color-info-darken);
+    background-color: rgb(var(--color-info-darken));
     border-color: transparent;
     color: var(--color-info-invert); }
   .file.is-success .file-cta {
@@ -2673,7 +2673,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-success-invert); }
   .file.is-success:hover .file-cta, .file.is-success.is-hovered .file-cta {
-    background-color: var(--color-success-darken);
+    background-color: rgb(var(--color-success-darken));
     border-color: transparent;
     color: var(--color-success-invert); }
   .file.is-success:focus .file-cta, .file.is-success.is-focused .file-cta {
@@ -2682,7 +2682,7 @@ a.box:active {
     box-shadow: 0 0 0.5em rgba(var(--color-success), 0.25);
     color: var(--color-success-invert); }
   .file.is-success:active .file-cta, .file.is-success.is-active .file-cta {
-    background-color: var(--color-success-darken);
+    background-color: rgb(var(--color-success-darken));
     border-color: transparent;
     color: var(--color-success-invert); }
   .file.is-warning .file-cta {
@@ -2690,7 +2690,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-warning-invert); }
   .file.is-warning:hover .file-cta, .file.is-warning.is-hovered .file-cta {
-    background-color: var(--color-warning-darken);
+    background-color: rgb(var(--color-warning-darken));
     border-color: transparent;
     color: var(--color-warning-invert); }
   .file.is-warning:focus .file-cta, .file.is-warning.is-focused .file-cta {
@@ -2699,7 +2699,7 @@ a.box:active {
     box-shadow: 0 0 0.5em rgba(var(--color-warning), 0.25);
     color: var(--color-warning-invert); }
   .file.is-warning:active .file-cta, .file.is-warning.is-active .file-cta {
-    background-color: var(--color-warning-darken);
+    background-color: rgb(var(--color-warning-darken));
     border-color: transparent;
     color: var(--color-warning-invert); }
   .file.is-danger .file-cta {
@@ -2707,7 +2707,7 @@ a.box:active {
     border-color: transparent;
     color: var(--color-danger-invert); }
   .file.is-danger:hover .file-cta, .file.is-danger.is-hovered .file-cta {
-    background-color: var(--color-danger-darken);
+    background-color: rgb(var(--color-danger-darken));
     border-color: transparent;
     color: var(--color-danger-invert); }
   .file.is-danger:focus .file-cta, .file.is-danger.is-focused .file-cta {
@@ -2716,7 +2716,7 @@ a.box:active {
     box-shadow: 0 0 0.5em rgba(var(--color-danger), 0.25);
     color: var(--color-danger-invert); }
   .file.is-danger:active .file-cta, .file.is-danger.is-active .file-cta {
-    background-color: var(--color-danger-darken);
+    background-color: rgb(var(--color-danger-darken));
     border-color: transparent;
     color: var(--color-danger-invert); }
   .file.is-small {
