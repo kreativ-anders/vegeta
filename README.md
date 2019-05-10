@@ -1,7 +1,7 @@
 # [Vegeta](https://github.com/kreativ-anders/vegeta)
 
 Vegeta is a **crazy CSS framework** based on [Bulma](https://bulma.io).
-The only difference is that Vegeta is using [CSS variables](https://caniuse.com/#feat=css-variables)!!!
+The only difference is that Vegeta is using [CSS variables](https://caniuse.com/#feat=css-variables) for colors!!!
 
 <a href="https://github.com/kreativ-anders/vegeta"><img src="https://raw.githubusercontent.com/kreativ-anders/vegeta/master/vegeta-banner.png" alt="Vegeta: a Flexbox CSS framework" style="max-width:100%;" width="600" height="315"></a>
 
