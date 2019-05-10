@@ -104,7 +104,7 @@ $button-static-border-color: rgb(var(--color-grey-lighter)) !default
       color: $button-text-hover-color
     &:active,
     &.is-active
-      background-color: var(--color-text-strong-darken)
+      background-color: rgb(var(--color-text-strong-darken))
       color: $button-text-hover-color
     &[disabled],
     fieldset[disabled] &
@@ -120,7 +120,7 @@ $button-static-border-color: rgb(var(--color-grey-lighter)) !default
       color: $color-invert
       &:hover,
       &.is-hovered
-        background-color: var(--color-#{$name}-darken)
+        background-color: rgb(var(--color-#{$name}-darken))
         border-color: transparent
         color: $color-invert
       &:focus,
@@ -131,7 +131,7 @@ $button-static-border-color: rgb(var(--color-grey-lighter)) !default
           box-shadow: $button-focus-box-shadow-size rgba($color, 0.25)
       &:active,
       &.is-active
-        background-color: var(--color-#{$name}-darken)
+        background-color: rgb(var(--color-#{$name}-darken))
         border-color: transparent
         color: $color-invert
       &[disabled],
@@ -143,7 +143,7 @@ $button-static-border-color: rgb(var(--color-grey-lighter)) !default
         background-color: $color-invert
         color: $color
         &:hover
-          background-color: var(--color-#{$name}-invert-darken)
+          background-color: rgb(var(--color-#{$name}-invert-darken))
         &[disabled],
         fieldset[disabled] &
           background-color: $color-invert
