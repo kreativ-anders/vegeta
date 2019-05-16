@@ -1,0 +1,98 @@
+// scss colers variable map
+$colers: (
+  // default
+  black:        hsl(0, 0%, 4%),
+  black-bis:    hsl(0, 0%, 7%),
+  black-ter:    hsl(0, 0%, 14%),
+
+  grey-darker:  hsl(0, 0%, 21%),
+  grey-dark:    hsl(0, 0%, 29%),
+  grey:         hsl(0, 0%, 48%),
+  grey-light:   hsl(0, 0%, 71%),
+  grey-lighter: hsl(0, 0%, 86%),
+
+  white-ter:    hsl(0, 0%, 96%),
+  white-bis:    hsl(0, 0%, 98%), 
+  white:        hsl(0, 0%, 100%),
+
+  orange:       hsl(14,  100%, 53%),
+  yellow:       hsl(48,  100%, 67%),
+  green:        hsl(141, 71%,  48%),
+  turquoise:    hsl(171, 100%, 41%),
+  cyan:         hsl(204, 86%,  53%),
+  blue:         hsl(217, 71%,  53%),
+  purple:       hsl(271, 100%, 71%),
+  red:          hsl(348, 100%, 61%),
+
+  // derived
+  primary:      hsl(171, 100%, 41%),  // turquoise
+
+  info:         hsl(204, 86%,  53%),  // cyan
+  success:      hsl(141, 71%,  48%),  // green
+  warning:      hsl(48,  100%, 67%),  // yellow
+  danger:       hsl(348, 100%, 61%),  // red
+
+  light:        hsl(0, 0%, 96%),  // white-ter
+  dark:         hsl(0, 0%, 21%),  // grey-darker
+
+  // invert colors
+  orange-invert:       hsl(194,  100%, 74%),
+  yellow-invert:       hsl(227,  100%, 33%),
+  green-invert:        hsl(321, 71%, 52%),
+  turquoise-invert:    hsl(351, 100%, 59%),
+  cyan-invert:         hsl(24, 86%, 47%),
+  blue-invert:         hsl(37, 71%, 47%),
+  purple-invert:       hsl(91, 100%, 29%),
+  red-invert:          hsl(168, 100%, 39%),
+
+  primary-invert:      hsl(351, 100%, 59%),
+
+  info-invert:         hsl(24, 86%, 47%),
+  success-invert:      hsl(321, 71%, 52%), 
+  warning-invert:      hsl(227,  100%, 33%),
+  danger-invert:       hsl(168, 100%, 39%),
+
+  light-invert:        hsl(0, 0%, 4%),
+  dark-invert:         hsl(0, 0%, 79%),
+
+  // general colors
+  background:   hsl(0, 0%, 96%),
+
+  border:       hsl(0, 0%, 86%),
+  border-hover: hsl(0, 0%, 71%),
+
+  // text colors
+  text:         hsl(0, 0%, 29%),
+  text-invert:  hsl(0, 0%, 71%),
+  text-light:   hsl(0, 0%, 48%),
+  text-strong:  hsl(0, 0%, 21%),
+
+  // code colors
+  code:             hsl(348, 100%, 61%),
+  code-background:  hsl(0, 0%, 96%),
+
+  pre:              hsl(0, 0%, 29%),
+  pre-background:   hsl(0, 0%, 96%),
+
+  // link colors
+  link:           hsl(217, 71%,  53%),
+  link-invert:    hsl(37, 71%, 47%),
+  link-visited:   hsl(271, 100%, 71%),
+
+  link-hover:        hsl(0, 0%, 21%),
+  link-hover-border: hsl(0, 0%, 71%),
+
+  link-focus:       hsl(0, 0%, 21%),
+  link-focus-border:hsl(217, 71%,  53%),
+
+  link-active:        hsl(0, 0%, 21%),
+  link-active-border: hsl(0, 0%, 29%)
+);
+
+// ripped CSS4 vars out of color map
+:root {
+  // each item in color map
+  @each $name, $color in $colers {
+    --color-#{$name}: #{$color};
+  }
+}

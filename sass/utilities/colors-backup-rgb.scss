@@ -1,0 +1,98 @@
+// scss colers variable map
+$colers: (
+  // default
+  black:        rgb(10, 10, 10),
+  black-bis:    rgb(17, 17, 17),
+  black-ter:    hsl(0, 0%, 14%),
+
+  grey-darker:  rgb(53, 53, 53),
+  grey-dark:    rgb(73, 73, 73),
+  grey:         rgb(122, 122, 122),
+  grey-light:   rgb(181, 181, 181),
+  grey-lighter: rgb(219, 219, 219),
+
+  white-ter:    rgb(244, 244, 244),
+  white-bis:    rgb(249, 249, 249), 
+  white:        rgb(255, 255, 255),
+
+  orange:       rgb(255, 71, 15),
+  yellow:       rgb(254, 221, 86),
+  green:        rgb(35, 209, 96),
+  turquoise:    rgb(0, 209, 177),
+  cyan:         rgb(32, 155, 238),
+  blue:         rgb(50, 115, 220),
+  purple:       rgb(183, 107, 255),
+  red:          rgb(254, 56, 95),
+
+  // derived
+  primary:      rgb(0, 209, 177),  // turquoise
+
+  info:         rgb(32, 155, 238),  // cyan
+  success:      rgb(35, 209, 96),  // green
+  warning:      rgb(254, 221, 86),  // yellow
+  danger:       rgb(254, 56, 95),  // red
+
+  light:        rgb(244, 244, 244),  // white-ter
+  dark:         rgb(53, 53, 53),  // grey-darker
+
+  // invert colors
+  orange-invert:       rgb(122, 224, 255),
+  yellow-invert:       rgb(0, 36, 168),
+  green-invert:        rgb(219, 45, 158),
+  turquoise-invert:    rgb(254, 45, 77),
+  cyan-invert:         rgb(222, 99, 16),
+  blue-invert:         rgb(204, 139, 34),
+  purple-invert:       rgb(71, 147, 0),
+  red-invert:          rgb(0, 198, 159),
+
+  primary-invert:      rgb(254, 45, 77),
+
+  info-invert:         rgb(222, 99, 16),
+  success-invert:      rgb(219, 45, 158), 
+  warning-invert:      rgb(0, 36, 168),
+  danger-invert:       rgb(0, 198, 159),
+
+  light-invert:        rgb(10, 10, 10),
+  dark-invert:         rgb(201, 201, 201),
+
+  // general colors
+  background:   rgb(244, 244, 244),
+
+  border:       rgb(219, 219, 219),
+  border-hover: rgb(181, 181, 181),
+
+  // text colors
+  text:         rgb(73, 73, 73),
+  text-invert:  rgb(181, 181, 181),
+  text-light:   rgb(122, 122, 122),
+  text-strong:  rgb(53, 53, 53),
+
+  // code colors
+  code:             rgb(254, 56, 95),
+  code-background:  rgb(244, 244, 244),
+
+  pre:              rgb(73, 73, 73),
+  pre-background:   rgb(244, 244, 244),
+
+  // link colors
+  link:           rgb(50, 115, 220),
+  link-invert:    rgb(204, 139, 34),
+  link-visited:   rgb(183, 107, 255),
+
+  link-hover:        rgb(53, 53, 53),
+  link-hover-border: rgb(181, 181, 181),
+
+  link-focus:       rgb(53, 53, 53),
+  link-focus-border:rgb(50, 115, 220),
+
+  link-active:        rgb(53, 53, 53),
+  link-active-border: rgb(73, 73, 73)
+);
+
+// ripped CSS4 vars out of color map
+:root {
+  // each item in color map
+  @each $name, $color in $colers {
+    --color-#{$name}: #{$color};
+  }
+}
